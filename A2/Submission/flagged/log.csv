@@ -1,0 +1,4 @@
+sentence,Baseline Model,CNN Model,flag,username,timestamp
+,,,,,2023-10-09 17:09:00.313330
+apple is a kind of fruit,Baseline,"Class: subjective, Probability: 1.0000",,,2023-10-09 17:14:52.992342
+apple is a kind of fruit,Baseline,"Class: subjective, Probability: 1.0000",,,2023-10-09 17:14:55.977540
