@@ -33,9 +33,6 @@ def sen_collate_fn(batch, device):
     padded_x = []
     for sx in x:
         padded_x.append(torch.cat([sx, torch.ones(maxlen - len(sx))]))
-
-    if not isinstance(y, torch.Tensor) or y.dtype != torch.int64:
-        raise ValueError("y should be a torch.Tensor of dtype torch.int64")
         
     ret_x = torch.stack(padded_x).long().to(device)
     ret_y = torch.as_tensor(y).long().to(device)
