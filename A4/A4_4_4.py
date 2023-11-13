@@ -5,7 +5,7 @@ input_statements = pd.read_csv('DirectStatements.csv', header=None)[0].tolist()[
 
 print(len(input_statements))
 
-openai.api_key = "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"
+openai.api_key = ""
 
 def generate_softened_statement(statement):
     completion = openai.chat.completions.create(
